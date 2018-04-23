@@ -1,0 +1,11 @@
+C:\Users\SnShirakiin\Source\repos\Dijkstra\Gestores\bin\Debug\netstandard1.6\Gestores.deps.json
+C:\Users\SnShirakiin\Source\repos\Dijkstra\Gestores\bin\Debug\netstandard1.6\Gestores.dll
+C:\Users\SnShirakiin\Source\repos\Dijkstra\Gestores\bin\Debug\netstandard1.6\Gestores.pdb
+C:\Users\SnShirakiin\Source\repos\Dijkstra\Gestores\bin\Debug\netstandard1.6\Entidades.dll
+C:\Users\SnShirakiin\Source\repos\Dijkstra\Gestores\bin\Debug\netstandard1.6\Entidades.pdb
+C:\Users\SnShirakiin\Source\repos\Dijkstra\Gestores\obj\Debug\netstandard1.6\Gestores.csprojResolveAssemblyReference.cache
+C:\Users\SnShirakiin\Source\repos\Dijkstra\Gestores\obj\Debug\netstandard1.6\Gestores.csproj.CoreCompileInputs.cache
+C:\Users\SnShirakiin\Source\repos\Dijkstra\Gestores\obj\Debug\netstandard1.6\Gestores.AssemblyInfo.cs
+C:\Users\SnShirakiin\Source\repos\Dijkstra\Gestores\obj\Debug\netstandard1.6\Gestores.csproj.CopyComplete
+C:\Users\SnShirakiin\Source\repos\Dijkstra\Gestores\obj\Debug\netstandard1.6\Gestores.dll
+C:\Users\SnShirakiin\Source\repos\Dijkstra\Gestores\obj\Debug\netstandard1.6\Gestores.pdb

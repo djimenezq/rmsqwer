@@ -6,10 +6,17 @@ using System.Threading.Tasks;
 
 namespace Dijkstra
 {
-    class Grafo
+    public class Grafo
     {
         public Vertice Root;
-        public List<Vertice> AllVertices = new List<Vertice>();
+        public HashTable Table;
+        public List<Vertice> AllVertices;
+
+        public Grafo()
+        {
+            Table = new HashTable();
+            AllVertices = new List<Vertice>();
+        }
 
         public Vertice CreateRoot(string name)
         {
@@ -17,14 +24,39 @@ namespace Dijkstra
             return Root;
         }
 
-        public Vertice CreateVertice(string name)
+        public Vertice CreateVertice(string n)
         {
-            var n = new Vertice(name);
-            AllVertices.Add(n);
-            return n;
+            Vertice v=Table.addVertice(n);
+            if (v != null)
+            {
+                AllVertices.Add(v);
+            }
+            return v;
         }
 
-        public int?[,] CreateAdjMatrix()
+        public List<Arco> ObtenerAdyacentes(String n)
+        {
+            Vertice v = Table.buscarVertice(n);
+            if (v != null)
+            {
+                return v.Arcos;
+            }
+            else
+            {
+                return null;
+            }
+        }
+
+        public Arco CreateArco(String norigen,String ndestino, int d)
+        {
+            Vertice origen = Table.buscarVertice(norigen);
+            Vertice destino = Table.buscarVertice(ndestino);
+    
+            return origen.AddArco(destino, d);
+        }
+
+
+        private int?[,] CreateAdjMatrix()
         {
             int?[,] adj = new int?[AllVertices.Count, AllVertices.Count];
 
@@ -47,7 +79,7 @@ namespace Dijkstra
             return adj;
         }
 
-        public List<int> DijkstraAlgorithm(int vInicial, int vFinal)
+        private List<String> DijkstraAlgorithm(int vInicial, int vFinal)
         {
             var graph = CreateAdjMatrix();
             var n =graph.GetLength(0);
@@ -106,15 +138,65 @@ namespace Dijkstra
                 return null;
             }
 
-            var path = new LinkedList<int>();
+            var path = new LinkedList<String>();
             int? currentNode = vFinal;
             while (currentNode != null)
             {
-                path.AddFirst(currentNode.Value);
+                Vertice v = FindVertice(currentNode.Value);
+                path.AddFirst(v.nombre);
                 currentNode = previous[currentNode.Value];
             }
 
             return path.ToList();
+        }
+
+        private String FindPath(Vertice inicial, Vertice final)
+        {
+            
+            var m = CreateAdjMatrix();
+            var path = DijkstraAlgorithm(AllVertices.IndexOf(inicial), AllVertices.IndexOf(final));
+            
+
+            if (path == null)
+            {
+                return "No hay camino entre: "+inicial.nombre+ " -> " +final.nombre;
+            }
+            else
+            {
+                int pathLength = 0;
+                for (int i = 0; i < path.Count - 1; i++)
+                {
+                    pathLength += m[FindIndex(path[i]), FindIndex(path[i + 1])].Value;
+                }
+
+                var formattedPath = string.Join("->", path);
+                return "Camino más corto: [" + inicial.nombre + " -> " + final.nombre + "] " + formattedPath + " Distancia recorrida: " + pathLength + "km";
+            }
+        }
+
+        public String EncontrarCaminoCorto(String o, String d)
+        {
+            Vertice origen = Table.buscarVertice(o);
+            Vertice destino = Table.buscarVertice(d);
+            return FindPath(origen, destino);
+        }
+
+        private int FindIndex(string nombre)
+        {
+            Vertice v = Table.buscarVertice(nombre);
+            if(v != null)
+            {
+               return AllVertices.IndexOf(v);
+            }
+            else
+            {
+                return -1;
+            }
+        }
+
+        private Vertice FindVertice(int indice)
+        {
+            return AllVertices[indice];
         }
     }
 }
