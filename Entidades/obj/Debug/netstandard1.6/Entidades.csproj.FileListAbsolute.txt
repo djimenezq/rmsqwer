@@ -1,0 +1,8 @@
+C:\Users\SnShirakiin\Source\repos\Dijkstra\Entidades\bin\Debug\netstandard1.6\Entidades.deps.json
+C:\Users\SnShirakiin\Source\repos\Dijkstra\Entidades\bin\Debug\netstandard1.6\Entidades.dll
+C:\Users\SnShirakiin\Source\repos\Dijkstra\Entidades\bin\Debug\netstandard1.6\Entidades.pdb
+C:\Users\SnShirakiin\Source\repos\Dijkstra\Entidades\obj\Debug\netstandard1.6\Entidades.csprojResolveAssemblyReference.cache
+C:\Users\SnShirakiin\Source\repos\Dijkstra\Entidades\obj\Debug\netstandard1.6\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\SnShirakiin\Source\repos\Dijkstra\Entidades\obj\Debug\netstandard1.6\Entidades.AssemblyInfo.cs
+C:\Users\SnShirakiin\Source\repos\Dijkstra\Entidades\obj\Debug\netstandard1.6\Entidades.dll
+C:\Users\SnShirakiin\Source\repos\Dijkstra\Entidades\obj\Debug\netstandard1.6\Entidades.pdb

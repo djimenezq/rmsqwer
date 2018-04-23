@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27428.2015
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dijkstra", "Dijkstra\Dijkstra.csproj", "{0144039E-FBC0-4D10-AD88-A9A575BAD559}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entidades", "Entidades\Entidades.csproj", "{DE6FBDB7-2E6F-4470-9602-AB3F989E68C0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gestores", "Gestores\Gestores.csproj", "{3DFF307F-977F-4D89-BBA5-FD7CBF776F96}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MenuGrafo", "MenuGrafo\MenuGrafo.csproj", "{1199ADA1-29A4-4C24-83A5-64D5D16C20D0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +15,18 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{0144039E-FBC0-4D10-AD88-A9A575BAD559}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0144039E-FBC0-4D10-AD88-A9A575BAD559}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0144039E-FBC0-4D10-AD88-A9A575BAD559}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0144039E-FBC0-4D10-AD88-A9A575BAD559}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE6FBDB7-2E6F-4470-9602-AB3F989E68C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE6FBDB7-2E6F-4470-9602-AB3F989E68C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE6FBDB7-2E6F-4470-9602-AB3F989E68C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE6FBDB7-2E6F-4470-9602-AB3F989E68C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3DFF307F-977F-4D89-BBA5-FD7CBF776F96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DFF307F-977F-4D89-BBA5-FD7CBF776F96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DFF307F-977F-4D89-BBA5-FD7CBF776F96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3DFF307F-977F-4D89-BBA5-FD7CBF776F96}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1199ADA1-29A4-4C24-83A5-64D5D16C20D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1199ADA1-29A4-4C24-83A5-64D5D16C20D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1199ADA1-29A4-4C24-83A5-64D5D16C20D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1199ADA1-29A4-4C24-83A5-64D5D16C20D0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
